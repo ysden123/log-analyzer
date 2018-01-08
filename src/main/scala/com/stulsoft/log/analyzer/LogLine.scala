@@ -1,4 +1,4 @@
-package com.stulsoft.log.analyzer.parser
+package com.stulsoft.log.analyzer
 
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter

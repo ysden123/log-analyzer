@@ -1,4 +1,4 @@
-package com.stulsoft.log.analyzer.parser
+package com.stulsoft.log.analyzer
 
 import org.scalatest.{FlatSpec, Matchers}
 
