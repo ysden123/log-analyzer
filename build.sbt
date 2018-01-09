@@ -1,12 +1,15 @@
 import sbt.Keys.libraryDependencies
 
-lazy val sparkVersion = "2.2.0"
-lazy val scalaLoggingVersion = "3.5.0"
+lazy val sparkVersion = "2.2.1"
+lazy val scalaLoggingVersion = "3.7.2"
 lazy val commonIoVersion = "1.3.2"
 lazy val scalaTestVersion = "3.0.1"
 
+lazy val log4jVersion = "2.10.0"
+lazy val log4jApiScalaVersion = "11.0"
+
 lazy val commonSettings = Seq(
-  organization := "com.stulsoft.pspark",
+  organization := "com.stulsoft.log-analyzer",
   version := "1.1.2",
   scalaVersion := "2.11.8",
   scalacOptions ++= Seq(
@@ -15,7 +18,12 @@ lazy val commonSettings = Seq(
     "-language:postfixOps"),
   libraryDependencies ++= Seq(
     "org.apache.spark" %% "spark-core" % sparkVersion,
-    "com.typesafe.scala-logging" %% "scala-logging" % scalaLoggingVersion
+    "com.typesafe.scala-logging" %% "scala-logging" % scalaLoggingVersion,
+    "org.apache.logging.log4j" % "log4j-api" % log4jVersion,
+    "org.apache.logging.log4j" % "log4j-core" % log4jVersion,
+    "org.apache.logging.log4j" %% "log4j-api-scala" % log4jApiScalaVersion,
+    "org.apache.commons" % "commons-io" % commonIoVersion,
+    "org.scalatest" %% "scalatest" % scalaTestVersion % "test"
   )
 )
 
@@ -27,11 +35,4 @@ lazy val logAnalyzer = (project in file("."))
   .settings(commonSettings: _*)
   .settings(
     name := "log-analyzer"
-  )
-  .settings(
-    libraryDependencies ++= Seq(
-      // https://mvnrepository.com/artifact/org.apache.commons/commons-io
-      "org.apache.commons" % "commons-io" % commonIoVersion,
-      "org.scalatest" %% "scalatest" % scalaTestVersion % "test"
-    )
   )

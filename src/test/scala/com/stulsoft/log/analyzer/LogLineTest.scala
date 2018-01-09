@@ -7,7 +7,7 @@ import org.scalatest.{FlatSpec, Matchers}
   */
 class LogLineTest extends FlatSpec with Matchers {
 
-  behavior of "Line"
+  behavior of "LogLine"
 
   "parse" should "return Line instance" in {
     val line = "2017-11-09 08:01:31,857 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1"
