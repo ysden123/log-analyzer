@@ -13,4 +13,8 @@ class AnalyzerTest extends FlatSpec with Matchers {
     Analyzer.analyze("error.txt")
   }
 
+  it should "handle valid file name" in {
+    Analyzer.analyze("example1.log")
+  }
+
 }
