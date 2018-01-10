@@ -1,0 +1,20 @@
+2017-11-09 08:01:31,857 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:01:32,803 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 2
+2017-11-09 08:01:32,817 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 3
+2017-11-09 08:01:32,940 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:01:32,943 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:01:33,565 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:01:33,568 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:01:33,650 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:01:33,678 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:01:33,718 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:01:33,719 [http-bio-8080-exec-167] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:24:51,872 [http-bio-8080-exec-158] [INFO ] [com.test.class1:1234] - msg 1
+2017-11-09 08:26:02,148 [http-bio-8080-exec-201] [ERROR] [com.test.class1:1234] - Encountered an error executing step step0-PrepareDMBRequestStep in job RegisterIDmbTask
+java.lang.IllegalArgumentException: fileFolder : is null or empty.
+	com.test.class1:1234.getFileList(FtpManager.java:374) ~[who-foundation-8.9.1.jar:na]
+	com.test.class1:1234.getFileList(FtpManager.java:367) ~[who-foundation-8.9.1.jar:na]
+2017-11-09 08:26:02,209 [http-bio-8080-exec-201] [INFO ] [com.test.class1:1234] - msg 1
+2017-11-09 08:26:02,217 [http-bio-8080-exec-201] [DEBUG] [com.test.class1:1234] - msg 1
+2017-11-09 08:27:15,637 [http-bio-8080-exec-154] [INFO ] [com.test.class1:1234] - msg 1
+2017-11-09 08:27:15,651 [http-bio-8080-exec-154] [INFO ] [com.test.class1:1234] - msg 1
