@@ -33,4 +33,15 @@ object LogLine {
       }
     }
   }
+
+  /**
+    * Parses a log line
+    *
+    * @param line the log line
+    * @param f    the function that converts line to  {{{Option[LogLine]}}}
+    * @return {{{Option[LogLine]}}}
+    */
+  def parse(line: String, f: String => Option[LogLine]): Option[LogLine] = {
+    f(line)
+  }
 }
