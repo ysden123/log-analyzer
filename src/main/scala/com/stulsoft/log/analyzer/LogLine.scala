@@ -12,8 +12,9 @@ case class LogLine(date: LocalDateTime, thread: String, level: String, message: 
 object LogLine {
   /**
     * Parses a log line
+    *
     * @param line the log line
-    * @return the instance of the Line class
+    * @return the Option with instance of the Line class
     */
   def parse(line: String): Option[LogLine] = {
     val items = line.split(" ")
